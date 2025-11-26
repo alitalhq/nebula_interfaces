@@ -10,6 +10,15 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/GimbalCommand.msg"
+  "msg/GimbalMotorFeedback.msg"
+  "msg/GimbalStatus.msg"
+  "msg/OpState.msg"
+  "msg/Target.msg"
+  "msg/TargetArray.msg"
+  "msg/UiMouseTarget.msg"
+  "srv/FireCommand.srv"
+  "srv/SetMode.srv"
   DEPENDENCIES std_msgs
 )
 
