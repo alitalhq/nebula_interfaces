@@ -10,8 +10,8 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/empty.msg"
-  "srv/empty.srv"
+  "msg/Empty.msg"
+  "srv/Empty.srv"
   DEPENDENCIES std_msgs
 )
 
